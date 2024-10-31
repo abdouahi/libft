@@ -6,7 +6,7 @@
 /*   By: abdouahi <abdouahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:09:55 by abdouahi          #+#    #+#             */
-/*   Updated: 2024/10/30 10:19:19 by abdouahi         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:13:18 by abdouahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,15 +39,22 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (d);
 }
 
-// int main () {
-//    //char dest_str[] = "oldstring";
-//     char src_str[]  = "0123456789aef"; // 01
-//     char src_str1[]  = "0123456789aef"; // 
-//    //char dest_str1[] = "oldstring";
+// int main() {
+//     //char src_str[] = "0123456789aef";
+//     char src_str1[] = "0123456789aef";
+//     char src_str2[] = "0123456789aef";
 
-//    memmove(src_str + 2 , src_str + 4, 5);
-//    printf("%s", src_str);
-//    printf("\n");
-//    ft_memmove(src_str + 2 , src_str + 4, 5);
-//    printf("%s", src_str1);
+//     //printf("Before memmove: %s\n", src_str);
+//     //memmove(src_str + 2, src_str + 4, 5);
+//     //printf("After memmove: %s\n", src_str);
+
+//     printf("Before ft_memmove: %s\n", src_str1);
+//     ft_memmove(src_str1 + 2, src_str1 + 4, 5);
+//     printf("After ft_memmove: %s\n", src_str1);
+// 	printf("\n");
+//     printf("Before ft_memmove: %s\n", src_str2);
+//     ft_memmove(src_str2 + 4, src_str2 + 2, 5);
+//     printf("After ft_memmove: %s\n", src_str2);
+
+//     return 0;
 // }

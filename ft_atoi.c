@@ -6,7 +6,7 @@
 /*   By: abdouahi <abdouahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:10:04 by abdouahi          #+#    #+#             */
-/*   Updated: 2024/10/30 15:52:44 by abdouahi         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:05:28 by abdouahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,9 @@ int	ft_atoi(const char *ptr)
 	return (s * r);
 }
 
-// int main(){
-// 	printf("%d", ft_atoi("-9223372036858"));
+// int main()
+// {
+// 	printf("%d", ft_atoi(NULL));
 // 	printf("\n");
-// 	printf("%d", atoi("-9223372036858"));
-
+// 	printf("%d", atoi(NULL));
 // }

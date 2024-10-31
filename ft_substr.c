@@ -6,7 +6,7 @@
 /*   By: abdouahi <abdouahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 17:19:21 by abdouahi          #+#    #+#             */
-/*   Updated: 2024/10/29 09:27:34 by abdouahi         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:14:36 by abdouahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (s == 0)
 		return (NULL);
-	if (start > strlen(s))
-		return (strdup(""));
-	if (len > strlen(s + start))
-		len = strlen(s + start);
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
 	str = malloc(len + 1 * sizeof(char));
 	if (!str)
 		return (NULL);
@@ -49,12 +49,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 //     printf("Substring 3: '%s'\n", substr3);
 //     printf("Substring 4: '%s'\n", substr4);
 //     printf("Substring 5: '%s'\n", substr5 ? substr5 : "NULL");
-
 //     free(substr1);
 //     free(substr2);
 //     free(substr3);
 //     free(substr4);
 //     free(substr5);
-
 //     return 0;
 // }

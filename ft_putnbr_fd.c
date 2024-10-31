@@ -6,7 +6,7 @@
 /*   By: abdouahi <abdouahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 13:48:25 by abdouahi          #+#    #+#             */
-/*   Updated: 2024/10/30 14:47:29 by abdouahi         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:14:45 by abdouahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
+
+// int main(){
+// 	ft_putnbr_fd(12, 1);
+// }

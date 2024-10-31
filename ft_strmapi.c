@@ -6,7 +6,7 @@
 /*   By: abdouahi <abdouahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 10:56:11 by abdouahi          #+#    #+#             */
-/*   Updated: 2024/10/30 14:45:45 by abdouahi         ###   ########.fr       */
+/*   Updated: 2024/10/30 19:03:57 by abdouahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,17 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	p[i] = '\0';
 	return (p);
 }
+// char transform_char(unsigned int index, char c)
+// {
+//     return c + 1;
+// }
+
+// int main(void)
+// {
+//     char test_str[] = "abdo";
+
+//     char *result = ft_strmapi(test_str, transform_char);
+//     printf("%s\n", result);
+//     free(result);
+//     return 0;
+// }

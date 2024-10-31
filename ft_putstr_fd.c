@@ -6,7 +6,7 @@
 /*   By: abdouahi <abdouahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 12:09:36 by abdouahi          #+#    #+#             */
-/*   Updated: 2024/10/30 14:48:41 by abdouahi         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:12:28 by abdouahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,7 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+// int main(){
+// 	char p[] = "doull";
+// 	ft_putstr_fd(p, 1);
+// }

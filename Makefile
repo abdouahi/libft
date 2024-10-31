@@ -6,15 +6,15 @@
 #    By: abdouahi <abdouahi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/24 10:49:18 by abdouahi          #+#    #+#              #
-#    Updated: 2024/10/30 14:10:31 by abdouahi         ###   ########.fr        #
+#    Updated: 2024/10/31 12:59:13 by abdouahi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CC = cc
+FLAGS = -Wall -Wextra -Werror
 RM = rm -f
-AR = ar rcs 
+AR = ar rcs
 
 SRCS = ft_atoi.c ft_bzero.c ft_calloc.c\
 ft_isalpha.c ft_isascii.c ft_isdigit.c\
@@ -36,6 +36,9 @@ all : $(NAME)
 $(NAME) : $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
+%.o : %.c libft.h
+	$(CC) $(FLAGS) -c $< -o $@
+
 clean :
 	$(RM) $(OBJS)
 	
@@ -44,5 +47,3 @@ fclean : clean
 	
 re : fclean all
 
-
-.PHONY: clean fclean all re
